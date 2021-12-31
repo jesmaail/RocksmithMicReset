@@ -1,3 +1,8 @@
-Install-Module -Name AudioDeviceCmdlets
+
+if (!(Get-Module -ListAvailable -Name AudioDeviceCmdlets))
+{   
+    Install-Module -Name AudioDeviceCmdlets
+}
+
 Set-AudioDevice -RecordingVolume 100
-# That's literally all this is.
+
