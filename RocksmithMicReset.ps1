@@ -10,3 +10,5 @@ Write-Output "Setting Default Recording Device Volume to 100."
 Set-AudioDevice -RecordingVolume 100
 
 Write-Output "Rocksmith Mic Reset Complete!"
+
+Stop-Process -Id $PID
